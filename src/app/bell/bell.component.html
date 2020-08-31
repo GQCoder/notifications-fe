@@ -1,0 +1,15 @@
+<div class="page">
+  <div class="container">
+    <a class="notification" (click)="showNotifications()">
+      <img src="../../assets/alert.png">
+      <span class="badge" [hidden]="noActiveNotifications">{{count}}</span>
+    </a>
+    <mat-list [hidden]="theseNotifications">
+      <a mat-list-item *ngFor="let not of notifications">
+        <span class="h5">{{not.title}} </span>
+        <span>{{not.body}}</span>
+      </a>
+    </mat-list>
+  </div>
+</div>
+

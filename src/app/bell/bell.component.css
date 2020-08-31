@@ -1,0 +1,39 @@
+
+.page {
+  height: 100vh;
+}
+
+.page .container {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.page .container .lay1, .lay2 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+img {
+  width: 100px;
+}
+
+
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification .badge {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
